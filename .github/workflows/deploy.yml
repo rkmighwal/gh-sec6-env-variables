@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CLUSTER_ADDRESS: sandbox.npcyi.mongodb.net
-      MONGODB_PASSWORD: KZ93eyvNl5fWGRaB
-      MONGODB_USERNAME: react
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       PORT: 8080
     steps:
       - name: Get Code
